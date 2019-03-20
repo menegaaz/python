@@ -1,0 +1,18 @@
+print ('ENTRADA DE DADOS DO ALUNO')
+matricula = input("Digite a matricula do aluno: ")
+nav1 = int(input("Digite a nota da avaliacao 1: "))
+nav2 = int(input("Digite a nota da avaliacao 2: "))
+faltas = int(input("Digite a quantidades de faltas: "))
+media = ((nav1 + nav2)/2)
+pres = (100 - ((faltas * 100)/80))
+result = 1
+resultP = pres > 75 
+resultM = media >= 6
+result = resultM and resultP
+print ("LISTA DOS DADOS DO ALUNO")
+print ("+--------------------------------------------------------------------+")
+print ("| Matricula | Aval 1 | Aval 2 | Media | Faltas | Pres(%) | Resultado |")
+if(result == True): print ("| ", matricula," |  ",nav1,"   |   ",nav2,"  | ",media," |   ",faltas,"  |",pres,"%   | Aprovado |")
+else: print ("| ", matricula," |  ",nav1,"   |   ",nav2,"  | ",media," |   ",faltas,"  |",pres,"% | Reprovado |")
+print ("+--------------------------------------------------------------------+")
+
