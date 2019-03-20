@@ -1,0 +1,12 @@
+numero = int(input("Digite um número: "))
+for mult in [1,2,3,4,5,6,7,8,9,10]:
+    print ("Quanto é ",numero,"X",mult,"?")
+    result = int(input())
+    while(result != numero * mult):
+        print("Você errou, tente novamente:")
+        print ("Quanto é ",numero,"X",mult,"?")
+        result = int(input())
+    else:                 
+        print("Correto")
+else:
+    print("Tabuada criada corretamente")
