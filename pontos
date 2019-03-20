@@ -1,0 +1,9 @@
+print ('Bem vindo ao programa de cálculo de pontos do campeonato.')
+time = input('Digite o nome do time: ')
+vitorias = int(input('Quantos jogos foram ganhos? '))
+derrotas = int(input('Quantas derrotas? '))
+empates = int(input ('Quantos empates? '))
+pg = ((vitorias * 3)+(empates))
+jogos = (vitorias + derrotas + empates)
+
+print ('Em um total de ',jogos ,'jogos, o' ,time ,'Marcou ', pg, 'pontos.') 
